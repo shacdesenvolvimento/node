@@ -7,6 +7,7 @@ server = http.createServer((req, resp) => {
     //definir content type da pagina
     resp.setHeader("Content-Type", "text/plain; charset= utf-8")
 
+    //com req.url nós pegamos a url e atravél dela conseguimos montar as rotas
     //resp.end(req.url)
     if (req.url == "/") {
         resp.end('Pagina Inical')
